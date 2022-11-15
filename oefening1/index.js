@@ -23,6 +23,7 @@ const repeatLine = line.repeat(adres.length);
 
 let message = "";
 
+//checking empty input
 if (voorNaam === "") {
   message += "Minstens één van de ingevulde velden is niet geldig!";
 }
