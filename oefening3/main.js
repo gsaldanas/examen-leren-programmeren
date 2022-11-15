@@ -2,11 +2,15 @@
 import Schilder from "./modules/Schilder.js";
 import Schilderij from "./modules/Schilderij.js";
 
-const davidSchilder = new Schilder("david", "toppie", "kubisme");
-const werk1 = new Schilderij("FSD", "50x50", 1000);
+//testing variables
+const davidSchilder = new Schilder("Caspar", "Sandalen", "kubisme");
 
-console.log(werk1);
+//testing code
 console.log(davidSchilder);
-davidSchilder.addPainting("test", "100x100", "kubus");
-davidSchilder.addPainting(werk1);
+davidSchilder.addPainting("Kubus", "100x100", 200);
+davidSchilder.addPainting("Abstract", "50x50", 1000);
+davidSchilder.addPainting("Art old", "50x50", 1000);
+davidSchilder.addPainting("Modern", "50x50", 1000);
 console.log(davidSchilder);
+
+davidSchilder.printHmtl();
