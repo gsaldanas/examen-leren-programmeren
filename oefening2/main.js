@@ -1,5 +1,10 @@
 //importing files
 import Text from "./modules/Text.js";
-const test = new Text("brandweerman");
+const test = new Text("Brandweerman");
+//   .appendString(" einde")
+//   .prependString("Dag");
 
-console.log(test.vovelCount());
+//testin code
+
+test.prependString("hello");
+console.log(test);
