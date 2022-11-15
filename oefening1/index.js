@@ -16,6 +16,9 @@ console.log(postcode);
 const gemeente = rl.question("Gemeente ");
 console.log(gemeente);
 const upperCaseGemeente = gemeente.toUpperCase();
+//drawing the line
+const line = "-";
+const repeatLine = line.repeat(adres.length);
 
 let message = "";
 
@@ -38,6 +41,9 @@ if (gemeente === "") {
   message += "Minstens één van de ingevulde velden is niet geldig!";
 }
 //ouput
-console.log(capVoornaam + " " + capFamilienaam);
-console.log(postcode + " " + upperCaseGemeente);
+console.log(repeatLine);
+console.log("|" + capVoornaam + " " + capFamilienaam + "|");
+console.log("|" + adres + "|");
+console.log("|" + postcode + " " + upperCaseGemeente + "|");
+console.log(repeatLine);
 console.log(message);
