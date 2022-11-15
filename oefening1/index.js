@@ -10,6 +10,7 @@ const capFamilienaam =
   familieNaam.charAt(0).toUpperCase() + familieNaam.slice(1);
 console.log(familieNaam);
 const adres = rl.question("Straat en huisnummer? ");
+const capAdres = adres.charAt(0).toUpperCase() + familieNaam.slice(1);
 console.log(adres);
 const postcode = rl.question("Postcode? ");
 console.log(postcode);
@@ -42,8 +43,8 @@ if (gemeente === "") {
 }
 //ouput
 console.log(repeatLine);
-console.log("|" + capVoornaam + " " + capFamilienaam + "|");
-console.log("|" + adres + "|");
-console.log("|" + postcode + " " + upperCaseGemeente + "|");
+console.log("| " + capVoornaam + " " + capFamilienaam + " |");
+console.log("| " + capAdres + " |");
+console.log("| " + postcode + " " + upperCaseGemeente + " |");
 console.log(repeatLine);
 console.log(message);
