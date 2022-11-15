@@ -25,6 +25,11 @@ Schilder.prototype.printHmtl = function () {
         </ul>
     `);
 };
+//for each gebruiken
+// this.schilderijen.forEach((element) => {
+//   console.log(element);
+// });
+
 //   //afprinten van de schilderijen
 //   let output = " ";
 //   for (const property in Schilderij) {
